@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+
+    <!-- Main Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="name">
+                    <h1>Abdullah Amer</h1>
+                </div>
+                <ul id="sidebars">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, <br> I am <span>Abdullah Amer</span></h1>
+                <img src="back1.png" alt="Circular Image" class="circular-image">
+            </div>
+            <a href="Abdullah's CV.pdf" target="_main" download class="btn btn2">Download CV</a>
+        </div>
+
+    </div>
+
+    <!-- Main About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="my1.png">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I'm a frontend developer and C programmer who loves turning ideas into beautiful, functional
+                        websites. With a passion for clean code and a knack for creating intuitive user experiences, I'm
+                        always striving to stay ahead of the curve. I'm excited to collaborate with you on your next
+                        project and help you bring your vision to life. Let's chat about how we can create something
+                        truly special together.</p>
+
+                    <!-- Skills -->
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <!-- Work Experience -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>For designing Website's Structures</li>
+                            <li><span>CSS</span><br>For designing Website's Beauty</li>
+                            <li><span>JAVA-SCRIPT</span><br>For making Website's Logic</li>
+                            <li><span>BOOTSTRAP</span><br>For designing Website's Advanced Structures</li>
+                            <li><span>'C' Language</span><br>Programming Skill</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Amazon Clone</span><br>A functional e-commerce site emulating the Amazon shopping
+                                experience.</li>
+                            <li><span>Complete University Website</span><br>A comprehensive app designed to enhance
+                                campus life for students and staff.</li>
+                            <li><span>Weather App</span><br>A real-time weather app providing accurate forecasts and
+                                updates.</li>
+                            <li><span>Quiz-App</span><br>An engaging quiz app that lets you test your knowledge across
+                                various topics.</li>
+                            <li><span>Construction Website</span><br>A professional website showcasing construction
+                                services and project portfolios.</li>
+                            <li><span>Drum Beats Website</span><br>An excellent drum beat website where you can enjoy
+                                the beats and play the beats and can create a harmony among the beats.</li>
+                            <li><span id="more">And much more.....</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Matriculation</span> <span class="years">
+                                    <p>2021</p>
+                                </span>Allied School, Gujranwala</li><br>
+                            <li><span>Intermediate</span> <span class="years">
+                                    <p>2023</p>
+                                </span>Punjab College, Gujranwala</li><br>
+                            <li><span>Graduation</span> <span class="years">
+                                    <p>2nd Year</p>
+                                </span>BS Mechatronics Engineering, UET Lahore
+                            <li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>When it comes to web design, my goal is to create websites that not only look great but also work
+                        seamlessly for you and your users. I blend creativity with a solid understanding of how people
+                        interact with websites, ensuring your site is both visually stunning and easy to use. Whether
+                        you’re looking to refresh your current design or start from scratch, I’m here to turn your ideas
+                        into a site that truly reflects your brand and connects with your audience.</p>
+                    <a href="https://developer.mozilla.org/en-US/curriculum/" target="_main">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>C and Python Programmer</h2>
+                    <p>In the world of C programming, I’m committed to delivering clean, efficient, and reliable code
+                        that meets your technical needs. My expertise in C enables me to tackle everything from
+                        low-level system programming to high-performance applications with precision and care. I enjoy
+                        diving into complex challenges and optimizing code to run smoothly and effectively. Whatever you
+                        are designing, I am here to help you eith the best.</p>
+                    <a href="https://www.w3schools.com/c/index.php" target="_main">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>SolidWorks Designer</h2>
+                    <p>With SolidWorks, I turn concepts into detailed, functional designs that drive innovation and
+                        efficiency. My goal is to make your ideas come to life with precision, whether you're developing
+                        intricate mechanical parts or complex assemblies. I blend technical skill with a keen eye for
+                        detail to ensure that every design is both visually compelling and practically sound.</p>
+                    <a href="https://my.solidworks.com/training">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- My Work/ Projects-->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="C:\Users\Abdullah Amer\Pictures\Screenshots\Screenshot (61).png" style="height: 250px;"
+                        alt="">
+                    <div class="layer">
+                        <h3>University Website</h3>
+                        <p>Streamline your university experience with my comprehensive website.</p>
+                        <a href="d:\Programming Lab\Web Development\CSS\CSS Projects\Project 2 (University Website)\index.html"
+                            target="_main"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:\Users\Abdullah Amer\Pictures\Screenshots\Screenshot (62).png" style="height: 250px;"
+                        alt="">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Stay informed about the weather forecast with my user-friendly weather app.</p>
+                        <a href="d:\Programming Lab\Web Development\CSS\CSS Projects\Project 3 (Weather Website)\index.html"
+                            target="_main"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:\Users\Abdullah Amer\Pictures\Screenshots\Screenshot (65).png" style="height: 250px;"
+                        alt="">
+                    <div class="layer">
+                        <h3>Drum Beat's Website</h3>
+                        <p>Explore our diverse collection to find the perfect rhythm.</p>
+                        <a href="d:\Programming Lab\Web Development\CSS\Frontend-Projects-master\Drum kit\index.html"
+                            target="_main"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="C:\Users\Abdullah Amer\Pictures\Screenshots\Screenshot (60).png" style="height: 250px;"
+                        alt="">
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p>Replicating the e-commerce giant, my Amazon clone offers a seamless shopping experience.</p>
+                        <a href="d:\Programming Lab\Web Development\CSS\CSS Projects\Project 1 (Amazon Clone)\index.html"
+                            target="_main"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:\Users\Abdullah Amer\Pictures\Screenshots\Screenshot (63).png" style="height: 250px;"
+                        alt="">
+                    <div class="layer">
+                        <h3>Quiz App</h3>
+                        <p>Test your knowledge with my interactive quiz app, featuring a variety of categories and
+                            difficulty levels.</p>
+                        <a href="d:\Programming Lab\Web Development\CSS\CSS Projects\Project 4 (Quiz-App)\home.html"
+                            target="_main"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="c:\Users\Abdullah Amer\Pictures\Screenshots\Screenshot (67).png" style="height: 250px;"
+                        alt="">
+                    <div class="layer">
+                        <h3>Analouge Clock</h3>
+                        <p>Elevate your space with timeless designs and precision craftsmanship from our analogue clock
+                            range.</p>
+                        <a href="d:\Programming Lab\Web Development\CSS\Frontend-Projects-master\Analog clock\index.html"
+                            target="_main">
+                            <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>abdullahuet05@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>0321-1365335</p>
+<div class="social-icons">
+ <!-- Markup of social media icons  -->
+ <ul>
+    <li>
+        <a href="https://www.facebook.com/profile.php?id=100095170053864&mibextid=ZbWKwL" target="_main">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.linkedin.com/in/abdullah-amer-3595722a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_main">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/Abdullah2485" target="_main">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://abdullahuet05@gmail.com" target="_main">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    </li>
+</ul>
+</div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2485 Abdullah Amer. All rights reserved.</p>
+
+        </div>
+    </div>
+
+
+    <!-- JavaScript Code -->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidebars = document.getElementById("sidebars");
+
+        function openmenu() {
+            sidebars.style.right = "0";
+        }
+
+        function closemenu() {
+            sidebars.style.right = "-200px";
+
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwV0iD87oo--3NMJ8px74d2Y2zLP4YcwCxI606rmnfMtUzo7g7rj6N14OjLmUg0HB9-/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
